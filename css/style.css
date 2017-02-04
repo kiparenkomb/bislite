@@ -1,0 +1,408 @@
+body{
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.image{
+	display: none;
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+}
+.slider{
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	height: 650px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: grey;
+}
+.slider__img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+	display: block;
+}
+.showing{
+	opacity: 1;
+	z-index: 3;
+}
+.hero{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	color: white;
+	overflow: hidden;
+}
+header{
+	box-shadow: border-box;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 40px;
+	font-size: 0;
+}
+header:after{
+	content: '';
+	clear: both;
+}
+.logo{
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+	padding-left: 20px;
+}
+nav{
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	height: 99px;
+	margin-top: 35px;
+	padding-right: 20px;
+}
+.close{
+	display: none;
+	line-height: 30px;
+	color: white;
+	font-size: 16px;
+	font-weight: 200;
+	text-align: right;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.item{
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	line-height: 30px;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	transition: all 1s ease;
+}
+.item:hover{
+	color: #48bf72;
+}
+.separator{
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	border-right: 1px solid white;
+	transform: rotate(10deg);
+}
+.gamburger{
+	display: none;
+	vertical-align: top;
+	float: right;
+	padding-top: 35px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.gamburger span{
+	display: block;
+	width: 20px;
+	height: 3px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+.hero_title{
+	margin-top: 250px;
+	text-align: center;
+	font-size: 46px;
+	font-weight: 700;
+}
+.hero_text{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 30px;
+}
+.hero_button{
+	display: block;
+	width: 135px;
+	line-height: 40px;
+	margin: 40px auto;
+	border: 1px solid #48bf72;
+	border-radius: 5px;
+	color: #48bf72;
+	font-size: 14px;
+	text-align: center;
+	transition: all 1s ease;
+}
+.hero_button:hover{
+	color:white;
+}
+.filtres{
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 45px;
+	text-align: center;
+	font-size: 0;
+}
+.filtres_item{
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	line-height: 35px;
+	margin: 5px;
+	background: #eaeaea;
+	text-align: center;
+	color: black;
+	font-size: 16px;
+	cursor: pointer;
+	border: 1px solid #eaeaea;
+	transition: all 1s ease;
+}
+.active{
+	background: #48bf72;
+	color: white;
+	border: 1px solid #48bf72;
+}
+.filtres_item:hover{
+	border: 1px solid #48bf72;
+}
+.isotope{
+	width: 1200px;
+	margin: 0 auto;
+}
+.isotope:after{
+	content: "";
+	clear: both;
+}
+.isotope_img{
+	display: block;
+	width: 250px;
+    float: left;
+    margin: 25px;
+}
+.portfolio{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+}
+.conteiner{
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	background-color: #48bf72;
+	margin: 25px;
+	overflow: hidden;
+}
+.size450{
+	width: 450px;
+}
+.size650{
+	width: 650px;
+}
+.conteiner img{
+	transition: all 1s ease;
+}
+.img_text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 180px;
+	height: 50px;
+	margin: auto;
+	color: white;
+	text-align: center;
+	opacity: 0;
+	transition: all 1s ease;
+}
+.img_text h4{
+	font-size: 30px;
+}
+.img_text p{
+	font-size: 16px;
+}
+.about{
+	height: 500px;
+	background: url(../img/about.jpg) top no-repeat grey;
+	color: white;
+}
+.text{
+	width: 100%;
+	max-width: 840px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+	color: white;
+}
+.text_item{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	max-width: 420px;
+	padding: 90px 5px 0;
+	text-align: left;
+	box-sizing: border-box;
+}
+.text_item h3{
+	font-size: 30px;
+	font-weight: 700;
+}
+.text_item h4{
+	margin-top: 10px;
+	font-size: 22px;
+}
+.text_item p{
+	margin: 40px 0;
+	line-height: 1.5;
+	font-size: 16px;
+}
+.text_item a{
+	display: block;
+	width: 140px;
+	line-height: 40px;
+	border: 1px solid #3c4955;
+	border-radius: 5px;
+	color: #3c4955;
+	font-size: 14px;
+	text-align: center;
+	transition: all 1s ease;
+}
+.text_item a:hover{
+	color:white;
+}
+.contact{
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+}
+.contact a{
+	display: block;
+	margin: 50px 0 15px;
+	color: #48bf72;
+	font-size: 26px;
+	font-weight: 700;
+}
+.nom, .email{
+	display: inline-block;
+	vertical-align: top;
+	width: 333px;
+	height: 50px;
+	margin-top: 35px;
+	border: 1px solid #3c4955;
+	border-radius: 5px;
+}
+.nom{
+	margin-right: 30px;
+}
+input{
+	vertical-align: top;
+	width: 250px;
+	line-height: 48px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+	color: #3c4955;
+	font-size: 16px;
+}
+input:placeholder{
+	color: #3c4955;
+	opacity: 0.5;
+}
+.message{
+	width: 700px;
+	height: 228px;
+	margin-top: 35px;
+	border: 1px solid #3c4955;
+	border-radius: 5px;
+}
+.nom img,
+.email img,
+.message img{
+	margin-left: -6px;
+}
+textarea{
+	vertical-align: top;
+	width: 615px;
+	height: 200px;
+	margin-top: 15px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+	color: #3c4955;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+textarea:placeholder{
+	color: #3c4955;
+	opacity: 0.5;
+}
+.contact_button{
+	width: 700px;
+	line-height: 50px;
+	margin: 35px 0 55px;
+	background: #48bf72;
+	border-radius: 5px;
+	border: none;	
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;	
+	text-align: center;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+.contact_button:hover{
+	text-shadow: 0 0 10px white;
+}
+footer{
+	background: grey;
+}
+.footer{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	overflow: hidden;
+}
+.footer:after{
+	content: '';
+	clear: both;
+}
+.copyright{
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 55px;
+	color: white;
+	font-size: 16px;
+	padding-left: 20px;
+}
+.copyright a{
+	color: white;
+	font-weight: 700;
+	transition: all 1s ease;
+}
+.copyright a:hover{
+	text-decoration: underline;
+}
+.social{
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 20px;
+}
+.social a{
+	margin-left: 40px;
+	transition: all 1s ease;
+}
+.social a:hover{
+	opacity: 0.5;
+}
